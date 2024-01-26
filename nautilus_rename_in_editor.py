@@ -25,7 +25,7 @@ def config_log() -> None:
     file_handler.setFormatter(formatter)
     stdout_handler.setFormatter(formatter)
 
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.ERROR)
     logger.addHandler(file_handler)
     logger.addHandler(stdout_handler)
 
